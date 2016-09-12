@@ -17,6 +17,7 @@
 
         function test_PingPong()
         {
+            //Arrange
             $test_PingPongGenerator = new PingPongGenerator;
             $input = 15;
             //Act
@@ -27,6 +28,7 @@
 
         function test_Ping()
         {
+            //Arrange
             $test_PingPongGenerator = new PingPongGenerator;
             $input = 3;
             //Act
@@ -37,6 +39,7 @@
 
         function test_Pong()
         {
+            //Arrange
             $test_PingPongGenerator = new PingPongGenerator;
             $input = 5;
             //Act

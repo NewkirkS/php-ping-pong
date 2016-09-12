@@ -13,6 +13,9 @@
                 } elseif (($input_number % 3) == 0) {
                     array_push($list, "Ping");
                     --$input_number;
+                } elseif (($input_number % 5) == 0) {
+                    array_push($list, "Pong");
+                    --$input_number;
                 } else {
                 array_push($list, $input_number);
                 --$input_number;
