@@ -10,6 +10,9 @@
                 if (($input_number % 15) == 0) {
                     array_push($list, "Ping-Pong");
                     --$input_number;
+                } elseif (($input_number % 3) == 0) {
+                    array_push($list, "Ping");
+                    --$input_number;
                 } else {
                 array_push($list, $input_number);
                 --$input_number;
