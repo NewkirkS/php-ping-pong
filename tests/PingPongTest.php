@@ -14,6 +14,16 @@
             //Assert
             $this->assertEquals("1 2 3 4 5", $result);
         }
+
+        function test_PingPong()
+        {
+            $test_PingPongGenerator = new PingPongGenerator;
+            $input = 15;
+            //Act
+            $result = $test_PingPongGenerator->generatePingPongArray($input);
+            //Assert
+            $this->assertEquals("1 2 3 4 5 6 7 8 9 10 11 12 13 14 Ping-Pong", $result);
+        }
     }
 
  ?>
