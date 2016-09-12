@@ -1,7 +1,7 @@
 <?php
     date_default_timezone_set("America/Los_Angeles");
     require_once __DIR__."/../vendor/autoload.php";
-    require_once __DIR__."/../src/TitleCaseGenerator.php";
+    require_once __DIR__."/../src/PingPong.php";
 
     $app = new Silex\Application();
 
@@ -12,7 +12,7 @@
     ));
 
     $app->get("/", function() use ($app){
-
+        return $app["twig"]->render('number_input.html.twig');
     });
 
     return $app;

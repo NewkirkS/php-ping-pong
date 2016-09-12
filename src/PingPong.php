@@ -21,7 +21,8 @@
                 --$input_number;
                 }
             }
-            return implode(" ", array_reverse($list));
+            // *FOR TEST ONLY* return implode(" ", array_reverse($list));
+            return array_reverse($list);
         }
     }
  ?>

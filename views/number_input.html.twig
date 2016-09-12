@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <title>Ping-Pong</title>
+    </head>
+    <body>
+        <h1>Play Ping-Pong!</h1>
+        <p>
+            Enter a number below and the program will print out a list of numbers up to your input and replace all numbers divisible by 3 with "Ping", all numbers divisible by 5 with "Pong" and all numbers divisible by both with "Ping-Pong".
+        </p>
+        <form action="/results" method="post">
+            <div class="form-group">
+                <label for="number">Enter a number</label>
+                <input type="number" name="number">
+            </div>
+            <button  class="btn btn-success" type="submit">Play</button>
+        </form>
+    </body>
+</html>
