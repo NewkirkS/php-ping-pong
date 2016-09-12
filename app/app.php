@@ -15,5 +15,10 @@
         return $app["twig"]->render('number_input.html.twig');
     });
 
+    $app->get("/results", function() use ($app){
+        $myPingPong = new PingPongGenerator;
+        $results = $myPingPong->generatePingPongArray($_GET["number"]);
+        return $app["twig"]->render('results.html.twig', array("results" => $results));
+    });
     return $app;
  ?>
