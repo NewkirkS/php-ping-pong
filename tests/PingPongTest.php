@@ -8,22 +8,11 @@
         {
             //Arrange
             $test_PingPongGenerator = new PingPongGenerator;
-            $input = 5;
+            $input = 2;
             //Act
             $result = $test_PingPongGenerator->generatePingPongArray($input);
             //Assert
-            $this->assertEquals("1 2 Ping 4 Pong", $result);
-        }
-
-        function test_PingPong()
-        {
-            //Arrange
-            $test_PingPongGenerator = new PingPongGenerator;
-            $input = 15;
-            //Act
-            $result = $test_PingPongGenerator->generatePingPongArray($input);
-            //Assert
-            $this->assertEquals("1 2 Ping 4 Pong Ping 7 8 Ping Pong 11 Ping 13 14 Ping-Pong", $result);
+            $this->assertEquals("1 2", $result);
         }
 
         function test_Ping()
@@ -47,6 +36,18 @@
             //Assert
             $this->assertEquals("1 2 Ping 4 Pong", $result);
         }
+
+        function test_PingPong()
+        {
+            //Arrange
+            $test_PingPongGenerator = new PingPongGenerator;
+            $input = 15;
+            //Act
+            $result = $test_PingPongGenerator->generatePingPongArray($input);
+            //Assert
+            $this->assertEquals("1 2 Ping 4 Pong Ping 7 8 Ping Pong 11 Ping 13 14 Ping-Pong", $result);
+        }
+
     }
 
  ?>
